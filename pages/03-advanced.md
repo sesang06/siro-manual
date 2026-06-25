@@ -9,7 +9,7 @@
 
 위플랩에 방문합니다.
 
-[https://weflab.com/chat](https://weflab.com/chat)
+[위플랩 채팅](https://weflab.com/chat)
 
 ‘채팅창’을 클릭한 후 ‘URL’을 복사합니다.
 
@@ -75,6 +75,6 @@
 
 ### 주 프로그램 제작: 유투버 저세상개발자
 
-### 유니티 파트 제작: Elik Song (dunward) [https://github.com/dunward](https://github.com/dunward)
+### 유니티 파트 제작: Elik Song (dunward) [GitHub — dunward](https://github.com/dunward)
 
-#### ★개발자 후원하기☆ [https://toon.at/donate/worlddev](https://toon.at/donate/worlddev)
+#### ★개발자 후원하기☆ [개발자 후원 (toon.at)](https://toon.at/donate/worlddev)

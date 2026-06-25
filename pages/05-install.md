@@ -33,12 +33,12 @@ model_type: gemini
 [[/WARNING]]
 ## 3. Unity 클라이언트
 
-Live2D 표시·자막·오디오 재생은 Unity 클라이언트가 담당합니다. [Unity 클라이언트](pages/07-unity-client.md) 절차에 따라 **siro-launcher**를 준비하세요.
+Live2D 표시·자막·오디오 재생은 Unity 클라이언트가 담당합니다. [Unity 클라이언트](07-unity-client.md) 절차에 따라 **siro-launcher**를 준비하세요.
 
 ## 4. 첫 실행
 
-[첫 실행](pages/06-first-run.md)으로 진행합니다.
+[첫 실행](06-first-run.md)으로 진행합니다.
 
 ## 업데이트
 
-새 zip을 받아 기존 폴더를 덮어쓰기 전에 `setting_doc` 백업을 권장합니다. [설정 관리](pages/12-settings.md)의 내보내기 기능을 사용할 수 있습니다.
+새 zip을 받아 기존 폴더를 덮어쓰기 전에 `setting_doc` 백업을 권장합니다. [설정 관리](12-settings.md)의 내보내기 기능을 사용할 수 있습니다.

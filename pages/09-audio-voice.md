@@ -61,4 +61,4 @@
 
 ## 라투디와의 관계
 
-Unity 재생 볼륨·mouth gain은 [Live2D](pages/10-live2d.md) 탭과 Unity 클라이언트에서 조절합니다.
+Unity 재생 볼륨·mouth gain은 [Live2D](10-live2d.md) 탭과 Unity 클라이언트에서 조절합니다.

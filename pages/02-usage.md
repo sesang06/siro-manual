@@ -4,7 +4,7 @@
 
 ![screenshot](../assets/gdoc/img_002.png)
 
-동영상 설치 방법은 [https://youtube.com/live/bX-o5H6UAUE](https://youtube.com/live/bX-o5H6UAUE) 를 참고해 주십시오.
+동영상 설치 방법은 [동영상 설치 가이드 (YouTube)](https://youtube.com/live/bX-o5H6UAUE) 를 참고해 주십시오.
 
 ![screenshot](../assets/gdoc/img_003.png)
 - ai_vtuber 파일을 실행해 주십시오.
@@ -28,7 +28,7 @@
 
 AI Studio에 방문합니다.
 
-[https://aistudio.google.com/app/apikey?hl=ko](https://aistudio.google.com/app/apikey?hl=ko)
+[Google AI Studio — API 키](https://aistudio.google.com/app/apikey?hl=ko)
 
 ‘API 키 만들기’ 를 선택합니다.
 
@@ -52,7 +52,7 @@ AI Studio에 방문합니다.
 
 OpenAI API 웹사이트에 접속합니다.
 
-[https://platform.openai.com/docs/overview](https://platform.openai.com/docs/overview)
+[OpenAI API 개요](https://platform.openai.com/docs/overview)
 
 ![screenshot](../assets/gdoc/img_009.png)
 
@@ -60,7 +60,7 @@ OpenAI API 웹사이트에 접속합니다.
 
 OpenAI Billing 페이지에 이동합니다.
 
-[https://platform.openai.com/settings/organization/billing/overview](https://platform.openai.com/settings/organization/billing/overview)
+[OpenAI Billing](https://platform.openai.com/settings/organization/billing/overview)
 
 ![screenshot](../assets/gdoc/img_010.png)
 
@@ -68,7 +68,7 @@ OpenAI Billing 페이지에 이동합니다.
 
 OpenAI API Keys 페이지에 이동합니다.
 
-[https://platform.openai.com/settings/organization/api-keys](https://platform.openai.com/settings/organization/api-keys)
+[OpenAI API Keys](https://platform.openai.com/settings/organization/api-keys)
 
 ![screenshot](../assets/gdoc/img_011.png)
 
@@ -96,19 +96,19 @@ OpenAI API Keys 페이지에 이동합니다.
 아래 내역은 선택으로 ChatGPT 이외의 LLM을 사용하는 방법을 설명합니다.
 - (선택) Claude 키 발급
 
-[https://console.anthropic.com/](https://console.anthropic.com/) 에 방문해 회원 가입을 처리합니다.
+[Anthropic Console](https://console.anthropic.com/) 에 방문해 회원 가입을 처리합니다.
 
 ![screenshot](../assets/gdoc/img_017.png)
 
 Settings - Billing에 들어가 신용카드를 등록하고 크레딧을 충전합니다.
 
-[https://console.anthropic.com/settings/billing](https://console.anthropic.com/settings/billing)
+[Claude Billing](https://console.anthropic.com/settings/billing)
 
 ![screenshot](../assets/gdoc/img_018.png)
 
 API Keys로 들어가 ‘Create Key’를 누릅니다.
 
-[https://console.anthropic.com/settings/keys](https://console.anthropic.com/settings/keys)
+[Claude API Keys](https://console.anthropic.com/settings/keys)
 
 ![screenshot](../assets/gdoc/img_019.png)
 
@@ -176,7 +176,7 @@ Key name을 자유롭게 입력하고 생성합니다.
 
 SuperTone 콘솔 사이트에 들어갑니다.
 
-[https://console.supertoneapi.com/](https://console.supertoneapi.com/)
+[Supertone Console](https://console.supertoneapi.com/)
 
 Sign up 혹은 Sign in을 진행합니다.
 
@@ -196,7 +196,7 @@ API Keys에 들어갑니다.
 
 결제 창에서 슈퍼톤을 과금합니다.
 
-결제 창 : [https://play.supertone.ai/subscription](https://play.supertone.ai/subscription)
+결제 창 : [Supertone 결제](https://play.supertone.ai/subscription)
 
 ![screenshot](../assets/gdoc/img_034.png)
 - ‘Supertone 키’ 를 입력합니다.
@@ -249,7 +249,7 @@ API Keys에 들어갑니다.
 Traceback (most recent call last): File "capture\video_capture_selector.py", line 15, in run SystemError:  returned a result with an exception set
 식의 오류가 뜨면서 비디오 장치 로딩이 굳은 경우,
 
-[https://blog.naver.com/404errorkr/223834100569](https://blog.naver.com/404errorkr/223834100569)
+[UTF-8 로캘 설정 (네이버 블로그)](https://blog.naver.com/404errorkr/223834100569)
 를 참고하시고 시스템 로컬에서 Beta : 세계 언어 지원을 위해 Unicode UTF-8 사용을 체크해 주세요.
 
 ![screenshot](../assets/gdoc/img_039.png)

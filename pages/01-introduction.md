@@ -28,7 +28,7 @@
 
 ## 사용자 폴더 이름이 한글이면 구동 불가
 
-[https://www.youtube.com/watch?v=jBRkP4AV5rI](https://www.youtube.com/watch?v=jBRkP4AV5rI)  같은 걸 보시면서 영문으로 윈도우 계정을 변경하셔야 동작합니다.
+[Windows 사용자 폴더 영문 변경 (YouTube)](https://www.youtube.com/watch?v=jBRkP4AV5rI)  같은 걸 보시면서 영문으로 윈도우 계정을 변경하셔야 동작합니다.
 
 
 ### 다운로드

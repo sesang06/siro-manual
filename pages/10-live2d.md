@@ -37,4 +37,4 @@
 
 Python이 behavior 명령을 WebSocket으로 보내면 Unity가 표정·의상·자막을 갱신합니다. Unity가 실행 중이어야 합니다.
 
-[Unity 클라이언트](pages/07-unity-client.md)
+[Unity 클라이언트](07-unity-client.md)
