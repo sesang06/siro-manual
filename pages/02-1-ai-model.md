@@ -2,21 +2,40 @@
 
 ![AI 모델 패널](../assets/ui/panel-ai-model.png)
 
-| UI 라벨 | 설명 | 즉시 반영 |
-|---------|------|-----------|
-| 메인 모델 종류 (응답 생성) | 시청자·스트리머 발화에 쓸 LLM (Gemini, ChatGPT 등) | X |
-| 메인 모델명 | 모델 ID (`response_model`) | X |
-| 서브모델 종류 (레퍼런스·요약) | Idle 의도·요약 등 보조 LLM | X |
-| 서브모델명 | 서브모델 ID | X |
-| 임베딩 모델 (메모리 벡터 검색) | `chatgpt` / `gemini` | X |
-| OpenAI API 키 | ChatGPT·Realtime STT·임베딩 | X |
-| Gemini API 키 | Gemini LLM | X |
-| Claude API 키 | Claude LLM | X |
-| Grok API 키 | Grok LLM | X |
-| Hugging Face 토큰 | 일부 모델 다운로드 | X |
+좌측 **AI 모델** 탭에서 대화에 쓸 LLM과 API 키를 설정합니다.
+
+## 메인 모델 (응답 생성)
+
+스트리머 발화·시청자 댓글·후원에 **실제로 답할 때** 사용하는 LLM입니다.
+
+**메인 모델 종류**에서 Gemini, ChatGPT, Claude, Grok, Ollama 등 제공자를 고릅니다. 선택에 따라 아래에 해당 API 키 입력란이 보이거나 숨겨집니다.
+
+**메인 모델명**에는 구체적인 모델 ID를 적습니다. 예: `gemini-2.5-flash`, `gpt-4o-mini`. 드롭다운에서 종류를 바꾸면 기본값이 자동으로 채워지기도 하지만, 최신 모델명은 직접 확인해 넣는 것이 좋습니다.
+
+## 서브모델 (레퍼런스·요약)
+
+메인 대화와 **별도로** 돌아가는 보조 LLM입니다. Idle(자동 발화) 의도 판단, 세션 요약 갱신, 레퍼런스 검색 보조 등에 쓰입니다. 메인과 다른 제공자·모델을 골라 비용을 나눌 수 있습니다.
+
+**서브모델 종류**와 **서브모델명**은 메인과 같은 방식으로 설정합니다. 가벼운 모델을 두면 응답 비용을 줄일 수 있습니다.
+
+## 임베딩 모델
+
+**장기 메모리** 기능을 켰을 때, 과거 대화를 벡터로 저장·검색하는 데 쓰는 임베딩 제공자입니다 (`chatgpt` 또는 `gemini`). 메모리를 쓰지 않으면 크게 신경 쓰지 않아도 됩니다.
+
+## API 키·서버 주소
+
+선택한 모델에 맞는 항목만 표시됩니다.
+
+- **OpenAI API 키** — ChatGPT LLM, OpenAI Realtime STT, ChatGPT 임베딩에 공통 사용
+- **Gemini API 키** — Gemini LLM
+- **Claude API 키** — Claude LLM
+- **Grok API 키** — Grok LLM
+- **Hugging Face 토큰** — 일부 모델/가중치 다운로드 시 필요
+- **Ollama 서버 주소** — 로컬 Ollama (기본 `http://localhost:11434`)
+- **OpenAI 호환 서버 주소** — LM Studio 등 OpenAI API 호환 로컬 서버 (예: `http://localhost:1234/v1`)
+
+키 발급 절차는 [[01. 시작하기|시작하기]]의 API 키 설정을 참고하세요.
 
 [[TIP("재시작 필요")]]
-모델 종류·모델명·임베딩 변경은 **프로그램 재시작** 후 적용됩니다.
+모델 종류·모델명·임베딩·API 키를 바꾼 뒤에는 **프로그램을 재시작**해야 반영됩니다. 실행 중 저장만으로는 백엔드가 새 모델을 쓰지 않습니다.
 [[/TIP]]
-
-API 키 발급 절차는 [[01. 시작하기|시작하기]]의 API 키 설정을 참고하세요.
