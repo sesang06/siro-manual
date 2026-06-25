@@ -38,6 +38,10 @@ LLM이 `<happy>` 같은 감정 태그를 내면, [감정별 프롬프트](https:
 
 **감정→표정 매핑 편집…** — 「happy → expression_01」처럼 감정 문자열과 Live2D expression 이름을 짝 지어 편집합니다.
 
+![감정→표정 매핑 편집](../assets/ui/dialog-emotion-expression.png)
+
+Unity에 모델이 로드되어 있으면 **목록 새로고침**으로 실제 expression 이름이 채워집니다. 모델이 없으면 「매핑 가능한 표정이 없습니다」가 나올 수 있습니다.
+
 ## GPT-SoVITS 보이스
 
 ![screenshot](../assets/gdoc/img_058.png)

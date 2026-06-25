@@ -21,9 +21,9 @@
 - **설정 폴더 열기** — 탐색기에서 해당 폴더를 엽니다.
 - **프롬프트 편집** — `prompt.txt`를 GUI로 편집합니다. 성격·말투·규칙의 기본 틀입니다.
 
-![screenshot](../assets/gdoc/img_044.png)
+![프롬프트 편집 다이얼로그](../assets/ui/dialog-prompt-editor.png)
 
-프롬프트에는 `$USER_NAME`, `$SCENARIO`, `$SUMMARY`, `$MEMORY` 같은 변수가 들어갈 수 있습니다.
+프롬프트에는 `$USER_NAME`, `$SCENARIO`, `$SUMMARY`, `$MEMORY` 같은 변수가 들어갈 수 있습니다. 상단 **사용 가능한 매크로** 목록을 참고하세요.
 
 ## 시작 시나리오
 
@@ -38,15 +38,10 @@
 
 ## 레퍼런스·감정 프롬프트
 
-문답 예시(레퍼런스)와 감정별 추가 문장은 **AI 기능** 탭에서 편집합니다.
+문답 예시(레퍼런스)와 감정별 추가 문장은 **AI 기능** 탭에서 편집합니다. 자세한 설명과 스크린샷은 [AI 기능](https://wikidocs.net/372530) 페이지를 보세요.
 
-- [레퍼런스 문답 편집](https://wikidocs.net/372530) — `reference.jsonl`에 「이런 질문엔 이렇게 답한다」 예시를 쌓습니다.
-- [감정별 추가 프롬프트 편집](https://wikidocs.net/372530) — 기쁨·화남 등 상태마다 system 프롬프트에 덧붙일 문장을 넣습니다.
-
-![screenshot](../assets/gdoc/img_048.png)
-![screenshot](../assets/gdoc/img_049.png)
-![screenshot](../assets/gdoc/img_050.png)
-![screenshot](../assets/gdoc/img_051.png)
+- **레퍼런스 문답 편집** — `reference.jsonl`에 「이런 질문엔 이렇게 답한다」 예시를 쌓습니다.
+- **감정별 추가 프롬프트 편집** — 기쁨·화남 등 상태마다 system 프롬프트에 덧붙일 문장을 넣습니다.
 
 [[TIP("재시작 필요")]]
 캐릭터 폴더·시나리오·프롬프트를 바꾼 뒤 **프로그램 재시작**이 필요합니다.
