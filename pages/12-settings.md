@@ -29,4 +29,4 @@
 
 ## 버전 정보
 
-앱 하단 또는 `version.yaml`에서 현재 버전을 확인할 수 있습니다. [변경 이력](16-changelog.md)과 대조하세요.
+앱 하단 또는 `version.yaml`에서 현재 버전을 확인할 수 있습니다. [변경 이력](pages/16-changelog.md)과 대조하세요.

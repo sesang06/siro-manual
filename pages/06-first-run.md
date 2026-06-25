@@ -46,7 +46,7 @@ sequenceDiagram
 - **STT** — faster-whisper(로컬) 또는 OpenAI Realtime
 - **TTS** — `tts 모듈`(GPT-SoVITS), Supertone, MiniMax 등
 
-자세한 내용은 [오디오·음성](09-audio-voice.md)을 참고하세요.
+자세한 내용은 [오디오·음성](pages/09-audio-voice.md)을 참고하세요.
 
 ## 실행 제어 패널
 
@@ -64,4 +64,4 @@ sequenceDiagram
 - Python 쪽 `Connected to server at ws://localhost:8765`
 - 말하면 자막이 Unity에 표시되고 AI가 응답
 
-문제가 있으면 [문제 해결](15-troubleshooting.md)을 참고하세요.
+문제가 있으면 [문제 해결](pages/15-troubleshooting.md)을 참고하세요.
