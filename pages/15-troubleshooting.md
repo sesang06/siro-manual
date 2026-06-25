@@ -70,9 +70,9 @@ UI 값은 대부분 자동 저장됩니다. **재시작 필요** 항목(모델·
 
 ## Qdrant / 메모리
 
-장기 메모리 사용 시 Qdrant가 `localhost:6333`에서 실행 중이어야 합니다. [설치](pages/05-install.md) 참고.
+장기 메모리 사용 시 Qdrant가 `localhost:6333`에서 실행 중이어야 합니다. [[05. 설치|설치]] 참고.
 
 ## 더 도움이 필요할 때
 
-- [변경 이력](pages/16-changelog.md) — 최근 수정 사항
+- [[16. 변경 이력|변경 이력]] — 최근 수정 사항
 - 배포 버전: Hugging Face 버킷의 `version.yaml` 메타
