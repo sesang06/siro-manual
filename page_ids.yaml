@@ -1,0 +1,58 @@
+book_id: 20406
+pages:
+  - file: 00-overview.md
+    id: 372487
+    title: "00. 개요"
+    url: "https://wikidocs.net/372487"
+  - file: 01-getting-started.md
+    id: 372516
+    title: "01. 시작하기"
+    url: "https://wikidocs.net/372516"
+  - file: 02-ui-index.md
+    id: 372517
+    title: "02. UI 설정"
+    url: "https://wikidocs.net/372517"
+  - file: 02-1-ai-model.md
+    id: 372526
+    title: "02-1. AI 모델"
+    url: "https://wikidocs.net/372526"
+  - file: 02-2-character.md
+    id: 372527
+    title: "02-2. 캐릭터"
+    url: "https://wikidocs.net/372527"
+  - file: 02-3-audio-voice.md
+    id: 372528
+    title: "02-3. 오디오·음성"
+    url: "https://wikidocs.net/372528"
+  - file: 02-4-capture.md
+    id: 372529
+    title: "02-4. 화면 캡처"
+    url: "https://wikidocs.net/372529"
+  - file: 02-5-ai-features.md
+    id: 372530
+    title: "02-5. AI 기능"
+    url: "https://wikidocs.net/372530"
+  - file: 02-6-broadcast.md
+    id: 372531
+    title: "02-6. 방송"
+    url: "https://wikidocs.net/372531"
+  - file: 02-7-live2d.md
+    id: 372532
+    title: "02-7. 라투디"
+    url: "https://wikidocs.net/372532"
+  - file: 02-8-settings.md
+    id: 372533
+    title: "02-8. 설정 관리"
+    url: "https://wikidocs.net/372533"
+  - file: 02-9-runtime-control.md
+    id: 372534
+    title: "02-9. 실행 제어"
+    url: "https://wikidocs.net/372534"
+  - file: 04-troubleshooting.md
+    id: 372522
+    title: "04. 문제 해결"
+    url: "https://wikidocs.net/372522"
+  - file: 05-changelog.md
+    id: 372523
+    title: "04-1. 변경 이력"
+    url: "https://wikidocs.net/372523"

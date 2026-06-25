@@ -20,4 +20,4 @@
 
 고급 사용자는 프로그램을 **종료한 뒤** `setting_doc/config.yaml`을 텍스트 에디터로 수정할 수 있습니다. UI에 없는 옵션(`show_browser`, `react_to_comments_immediately` 등)도 여기서 넣을 수 있습니다.
 
-버전은 앱 하단 또는 `version.yaml`에서 확인하고 [[04-1. 변경 이력|변경 이력]]과 맞춰 보세요.
+버전은 앱 하단 또는 `version.yaml`에서 확인하고 [변경 이력](https://wikidocs.net/372523)과 맞춰 보세요.
