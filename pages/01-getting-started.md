@@ -68,46 +68,42 @@
 
 ### 2. API 키 설정
 
-압축 해제 후 `setting_doc` 폴더에 설정 파일이 있습니다.
+API 키는 **프로그램 UI에서 입력**하면 됩니다. 파일을 직접 편집할 필요는 없습니다.
 
-1. `setting_doc/config.yaml.example`이 있으면 `config.yaml`로 복사합니다.
-2. `setting_doc/config.yaml`을 텍스트 에디터로 엽니다.
-3. 사용할 LLM·STT·TTS에 맞는 API 키를 입력합니다.
+1. `main_pyqt.exe` 실행
+2. 좌측 **AI 모델** 탭 선택
+3. **메인 모델 종류**에서 사용할 LLM 선택 (Gemini 권장)
+4. 선택한 제공자에 맞는 **API 키** 입력란에 붙여넣기
 
-```yaml
-# 예시 (실제 키는 본인 것으로 교체)
-api_key: "YOUR_GEMINI_API_KEY"
-openai_api_key: "YOUR_OPENAI_KEY"
-model_type: gemini
-```
+![AI 모델 패널 — API 키 입력](../assets/ui/panel-ai-model.png)
 
-캐릭터별 설정은 `setting_doc/siro/config.yaml`에도 있습니다. UI에서 변경하면 자동 저장됩니다.
+입력한 값은 `setting_doc/config.yaml`에 **자동 저장**됩니다. 키 입력란은 비밀번호처럼 가려져 표시됩니다.
+
+STT·TTS API 키(Supertone, MiniMax, OpenAI Realtime 등)는 [오디오·음성](https://wikidocs.net/372528) 탭에서 같은 방식으로 설정합니다.
 
 [[WARNING("보안")]]
-`config.yaml`에는 API 키가 들어갑니다. 공개 저장소나 스트림 화면에 노출하지 마세요.
+API 키는 스트림 화면·녹화·스크린샷에 노출되지 않게 주의하세요. 메뉴얼용 스크린샷 촬영 시 `YOUR_KEY_HERE` 같은 더미 값을 넣는 것을 권장합니다.
 [[/WARNING]]
+
+**처음 설치할 때만:** `setting_doc/config.yaml`이 없으면 `config.yaml.example`을 `config.yaml`로 복사한 뒤 UI에서 키를 입력하세요. 고급 사용자만 텍스트 에디터로 `config.yaml`을 직접 수정합니다.
 
 #### Gemini 키 발급 (권장)
 
-[Google AI Studio — API 키](https://aistudio.google.com/app/apikey?hl=ko)에서 **API 키 만들기** → 키 복사.
+[Google AI Studio — API 키](https://aistudio.google.com/app/apikey?hl=ko)에서 **API 키 만들기** → 키 복사 → **AI 모델** 탭 **Gemini API 키**에 붙여넣기.
 
 ![screenshot](../assets/gdoc/img_005.png)
 ![screenshot](../assets/gdoc/img_006.png)
 
-UI **AI 모델** 탭에서 모델 종류를 `gemini`로 선택하고 키를 입력합니다.
-
-![screenshot](../assets/gdoc/img_008.png)
-
 #### OpenAI 키 (선택)
 
-[OpenAI API Keys](https://platform.openai.com/settings/organization/api-keys)에서 키 생성. [OpenAI Billing](https://platform.openai.com/settings/organization/billing/overview)에서 크레딧 충전이 필요할 수 있습니다.
+[OpenAI API Keys](https://platform.openai.com/settings/organization/api-keys)에서 키 생성 → **AI 모델** 탭 **OpenAI API 키** (ChatGPT·임베딩) 및 **오디오·음성** 탭 Realtime STT에 사용. [OpenAI Billing](https://platform.openai.com/settings/organization/billing/overview)에서 크레딧 충전이 필요할 수 있습니다.
 
 ![screenshot](../assets/gdoc/img_011.png)
 ![screenshot](../assets/gdoc/img_013.png)
 
 #### Claude 키 (선택)
 
-[Claude API Keys](https://console.anthropic.com/settings/keys)에서 키 생성.
+[Claude API Keys](https://console.anthropic.com/settings/keys)에서 키 생성 → **AI 모델** 탭 **Claude API 키**에 붙여넣기.
 
 ![screenshot](../assets/gdoc/img_019.png)
 
