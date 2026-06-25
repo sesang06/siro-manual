@@ -1,4 +1,4 @@
-# 변경 이력
+﻿# 변경 이력
 
 앱 버전은 Hugging Face 메타(`sesang06/siro_vtuber_meta`) 및 배포 zip 내 `version.yaml`과 동기화됩니다.
 

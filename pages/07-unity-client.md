@@ -1,4 +1,4 @@
-# Unity 클라이언트 (siro-launcher)
+﻿# Unity 클라이언트 (siro-launcher)
 
 Python 프로그램은 **대화·음성 처리**만 담당하고, **화면에 보이는 Live2D·자막·음성 출력**은 Unity 클라이언트가 담당합니다.
 

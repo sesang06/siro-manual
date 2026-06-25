@@ -1,10 +1,10 @@
-# 방송인용 고급 설정
+﻿# 방송인용 고급 설정
 
 ## 방송인용 고급 설정 안내
 
 #### 1.  시로가 시청자의 말에 반응하게 하기
 
-![screenshot](assets/gdoc/img_052.png)
+![screenshot](../assets/gdoc/img_052.png)
 - 위플랩 설정
 
 위플랩에 방문합니다.
@@ -13,7 +13,7 @@
 
 ‘채팅창’을 클릭한 후 ‘URL’을 복사합니다.
 
-![screenshot](assets/gdoc/img_053.png)
+![screenshot](../assets/gdoc/img_053.png)
 
 (채팅 댓글 연동)
 - 프로그램 설정
@@ -21,11 +21,11 @@
 - ‘위플랩 채팅창 URL 주소’를 체크합니다.
 - 시나리오 선택에서 ‘시청자와의 대화’를 선택합니다. 이 시나리오는 시청자들의 닉네임을 언급하면서 반응하라고 적혀 있습니다. 마음에 들지 않으시면 텍스트 파일을 열어 정책을 수정해주시면 됩니다.
 
-![screenshot](assets/gdoc/img_054.png)
+![screenshot](../assets/gdoc/img_054.png)
 
 (위플랩 후원 연동)
 
-![screenshot](assets/gdoc/img_055.png)
+![screenshot](../assets/gdoc/img_055.png)
 
 (투네이션 후원 연동)
 
@@ -33,7 +33,7 @@
 
 ‘후원, 댓글 상세 설정’ 으로 들어가면 더 상세한 설정을 할 수 있습니다.
 
-![screenshot](assets/gdoc/img_056.png)
+![screenshot](../assets/gdoc/img_056.png)
 
 댓글 오버레이 출력: 시로 AI가 반응하는 채팅을 2d live로 설정할 수 있습니다.
 
@@ -43,7 +43,7 @@
 
 시로 외의 별개의 페르소나를 구축할 때 사용해 주십시오.
 
-![screenshot](assets/gdoc/img_057.png)
+![screenshot](../assets/gdoc/img_057.png)
 
 ‘Live2D 모델 가져오기 (ZIP)’ 버튼을 누릅니다.
 
@@ -59,7 +59,7 @@
 
 #### 3. 목소리 변경
 
-![screenshot](assets/gdoc/img_058.png)
+![screenshot](../assets/gdoc/img_058.png)
 
 음성 커스텀 기능을 통해, 음성을 변경할 수 있습니다.
 

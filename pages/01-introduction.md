@@ -1,11 +1,11 @@
-# 시로 AI 설치 가이드
+﻿# 시로 AI 설치 가이드
 
 [[TIP("업데이트 안내")]]
 **2026-05-04** 의상 체인지가 동작하지 않는 버그를 수정했습니다. 이전에 다운받으신 분은 새로 다운받으시길 바랍니다.
 [[/TIP]]
 ## 시로 AI 소개
 
-![screenshot](assets/gdoc/img_000.jpg)
+![screenshot](../assets/gdoc/img_000.jpg)
 
 (게임 훈수두는 AI 버튜버 미소녀 만드는 법)
 - 시로AI는 실시간으로 유튜브, 치지직, 투네이션의 후원과 댓글, 그리고 스트리머의 목소리, 이미지를 인식하여 반응하는 AI 컴퍼니언입니다.
@@ -45,7 +45,7 @@
 
 ## 문의용 디스코드
 
-![screenshot](assets/gdoc/img_001.png)
+![screenshot](../assets/gdoc/img_001.png)
 
 프로그램 문의 / 피드백: [Discord](https://discord.com/invite/Dj9nBPCZv6) · [over.horizon.dev@gmail.com](mailto:over.horizon.dev@gmail.com)
 

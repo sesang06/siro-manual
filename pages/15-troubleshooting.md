@@ -1,4 +1,4 @@
-# 문제 해결
+﻿# 문제 해결
 
 ## Unity WebSocket
 **증상:** `Connected to server at ws://localhost:8765`가 안 나옴, TTS·자막 없음
