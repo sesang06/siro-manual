@@ -25,9 +25,12 @@
 | Anthropic Claude | LLM |
 | xAI Grok | LLM |
 | Supertone | 클라우드 TTS |
-| MiniMax | 클라우드 TTS |
+| MiniMax | 클라우드 TTS (방송용 권장, [Starter Pack 약 $5/월](https://www.minimax.io/audio/subscribe)) |
 
-로컬 Whisper STT + GPT-SoVITS TTS만 사용하면 LLM API 외 STT/TTS API는 생략할 수 있습니다.
+**STT/TTS 조합 요약**
+
+- **방송·스트리밍** — OpenAI Realtime STT + MiniMax TTS ([오디오·음성](https://wikidocs.net/372528) 권장 구성 참고)
+- **무료 로컬** — faster-whisper STT + GPT-SoVITS(`tts 모듈`) TTS → LLM API 외 STT/TTS API는 생략 가능
 
 ### 선택 구성
 
@@ -46,17 +49,17 @@
 
 1. [Hugging Face 버킷](https://huggingface.co/buckets/sesang06/siro_vtuber)에 접속합니다.
 2. GPU에 맞는 zip을 받습니다.
-   - 일반: `siro_ai.zip`
-   - RTX 50-series 등: `siro_ai_50.zip`
+   - 일반: **`siro_ai.zip`**
+   - 50xx대 GPU: **`siro_ai_50.zip`**
 3. 원하는 폴더에 **압축을 해제**합니다. (예: `C:\siro_ai\`)
+
+![Hugging Face — sesang06/siro_vtuber 다운로드](../assets/gdoc/hf_siro_vtuber_bucket.png)
 
 [[TIP("TIP")]]
 경로에 한글이나 특수문자가 없을수록 안정적입니다.
 [[/TIP]]
 
 동영상 설치 방법: [동영상 설치 가이드 (YouTube)](https://youtube.com/live/bX-o5H6UAUE)
-
-![screenshot](../assets/gdoc/img_003.png)
 
 ### 2. API 키 설정
 
@@ -114,7 +117,7 @@ sequenceDiagram
 1. **AI 버튜버 실행 프로그램** (`main_pyqt.exe` 또는 배포 런처)을 실행합니다. **캐릭터 표시 창**이 함께 뜹니다.
 2. 좌측 탭에서 **AI 모델** — LLM과 API 키를 확인합니다.
 3. **캐릭터** 탭 — 캐릭터 폴더·시나리오를 선택합니다.
-4. **오디오·음성** 탭 — 마이크, STT, TTS 모듈을 설정합니다. ([오디오·음성](https://wikidocs.net/372528) 참고)
+4. **오디오·음성** 탭 — 마이크, STT, TTS 모듈을 설정합니다. 방송이면 **OpenAI Realtime + MiniMax**, 연습·무료면 **Whisper + tts 모듈**. ([오디오·음성](https://wikidocs.net/372528) 참고)
 5. 우측 **실행 제어** → **프로그램 시작**을 클릭합니다.
 6. 초기화가 끝나면 마이크로 말해 보세요.
 

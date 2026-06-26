@@ -43,9 +43,3 @@ LLM이 `<happy>` 같은 감정 태그를 내면, [감정별 프롬프트](https:
 ![감정→표정 매핑 편집](../assets/ui/dialog-emotion-expression.png)
 
 캐릭터 창이 떠 있고 모델이 로드되어 있으면 **목록 새로고침**으로 실제 expression 이름이 채워집니다. 아직 모델이 없으면 「매핑 가능한 표정이 없습니다」가 나올 수 있습니다.
-
-## GPT-SoVITS 보이스
-
-![screenshot](../assets/gdoc/img_058.png)
-
-캐릭터 목소리 wav·대사는 [오디오·음성](https://wikidocs.net/372528) 탭 **보이스 설정**에서 지정합니다. 라투디 탭의 **재생 설정**으로 볼륨·립싱크 감도를 조절할 수 있으며, **실행 중 즉시** 반영됩니다.

@@ -9,7 +9,9 @@
 ## 다운로드
 
 - [Hugging Face — sesang06/siro_vtuber](https://huggingface.co/buckets/sesang06/siro_vtuber)
-- `siro_ai.zip` (일반 GPU), `siro_ai_50.zip` (50-series GPU)
+- **`siro_ai.zip`** (일반 GPU), **`siro_ai_50.zip`** (50xx대 GPU)
+
+![Hugging Face 다운로드](assets/gdoc/hf_siro_vtuber_bucket.png)
 
 ## 문의
 
