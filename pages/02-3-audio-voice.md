@@ -83,9 +83,16 @@ TTS·보이스 클론 사용에는 크레딧이 필요합니다. [Supertone Play
 
 ### API 키 발급 (웹)
 
-1. [MiniMax API Platform](https://platform.minimax.io/) 접속 → 회원가입·로그인
-2. 좌측 **API Keys** → **Create new secret key** → 키 이름 입력 후 생성
-3. 표시된 **Secret Key**를 즉시 복사 (재표시되지 않음)
+1. [MiniMax API Platform](https://platform.minimax.io/) 접속 → **Sign Up** 또는 **Console** → 로그인 화면
+
+![MiniMax 로그인](../assets/gdoc/minimax_02_login.png)
+
+2. Google·GitHub 또는 이메일로 가입·로그인 후 좌측 **API Keys** → **Create new secret key** → 키 이름 입력 후 생성
+
+![Prerequisites — Get a Key](../assets/gdoc/minimax_docs_prep.png)
+
+3. 표시된 **Secret Key**를 즉시 복사합니다 (재표시되지 않음)
+
 4. Speech TTS(종량제)를 쓸 경우 [Billing — Balance](https://platform.minimax.io/user-center/payment/balance)에서 잔액을 충전합니다.
 
 공식 가이드: [MiniMax API — Prerequisites](https://platform.minimax.io/docs/guides/quickstart-preparation)
