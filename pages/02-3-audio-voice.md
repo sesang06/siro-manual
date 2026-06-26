@@ -14,7 +14,7 @@
 | **특징** | 말하는 중에도 글자가 올라오고, TTS 지연·품질이 방송에 유리 | NVIDIA GPU로 로컬 처리. 설정은 단순하지만 GPU·VRAM 부담 |
 
 [[TIP("스트리머")]]
-설정 항목이 많아도 **Realtime STT + MiniMax TTS** 조합을 권장합니다. 방송 중 GPU를 SoVITS·Whisper에 쓰지 않아도 되고, 인식·합성 반응이 빠릅니다. 이어폰·「AI 발화 중 마이크 음소거」로 에코를 줄이세요.
+설정 항목이 많아도 **Realtime STT + MiniMax TTS** 조합을 권장합니다. 방송 중 GPU를 SoVITS·Whisper에 쓰지 않아도 되고, 인식·합성 반응이 빠릅니다.
 [[/TIP]]
 
 [[TIP("일반 유저")]]
@@ -102,9 +102,9 @@ TTS·보이스 클론 사용에는 크레딧이 필요합니다. [Supertone Play
 
 TTS 크레딧은 **[MiniMax Audio — Subscription](https://www.minimax.io/audio/subscribe)** 에서 구독하는 것이 보통 가장 쌉니다.
 
-![MiniMax Monthly Starter Pack ($5/월)](../assets/gdoc/minimax_audio_subscribe.png)
+![MiniMax Monthly Starter Pack — 약 5달러/월](../assets/gdoc/minimax_audio_subscribe.png)
 
-- **Monthly Starter Pack (약 $5/월)** — 소규모 방송·테스트에 무난한 시작점. 위 페이지에서 **Monthly** 선택 후 **Starter** 플랜
+- **Monthly Starter Pack (약 5달러/월)** — 소규모 방송·테스트에 무난한 시작점. 위 페이지에서 **Monthly** 선택 후 **Starter** 플랜
 - 종량제만 쓸 경우 [Billing — Balance](https://platform.minimax.io/user-center/payment/balance)에서 잔액 충전
 
 Speech API 키는 아래 **API Platform**에서 발급하고, TTS 사용량·구독은 **Audio Subscription** 페이지에서 관리합니다.

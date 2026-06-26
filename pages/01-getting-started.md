@@ -25,7 +25,7 @@
 | Anthropic Claude | LLM |
 | xAI Grok | LLM |
 | Supertone | 클라우드 TTS |
-| MiniMax | 클라우드 TTS (방송용 권장, [Starter Pack 약 $5/월](https://www.minimax.io/audio/subscribe)) |
+| MiniMax | 클라우드 TTS (방송용 권장, [Starter Pack 약 5달러/월](https://www.minimax.io/audio/subscribe)) |
 
 **STT/TTS 조합 요약**
 
