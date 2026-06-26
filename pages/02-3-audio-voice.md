@@ -46,25 +46,58 @@ AI 대사를 실제 목소리로 만듭니다.
 
 클라우드 TTS **슈퍼톤**을 쓸 때의 설정입니다.
 
+### API 키 발급 (웹)
+
+1. [Supertone API](https://supertoneapi.com/) 접속 → **Sign up** 또는 **Sign in**
+
+![Supertone API 가입](../assets/gdoc/img_030.png)
+
+2. [Supertone API Console](https://console.supertoneapi.com/) 로그인 → 좌측 **API Keys** 메뉴
+
+![Console — API Keys 메뉴](../assets/gdoc/img_031.png)
+
+3. **+ Create New Key** 클릭
+
+![Create New Key](../assets/gdoc/img_032.png)
+
+4. **Save your Key** 창에서 키를 **복사**합니다. 창을 닫으면 다시 볼 수 없습니다.
+
+![키 복사](../assets/gdoc/img_033.png)
+
+TTS·보이스 클론 사용에는 크레딧이 필요합니다. [Supertone Play — Subscription](https://play.supertone.ai/subscription)에서 크레딧·요금제를 확인·구매할 수 있습니다.
+
+![Subscription / 크레딧](../assets/gdoc/img_034.png)
+
+### 프로그램에 입력
+
 1. **오디오·음성** 탭 → **TTS (음성 합성)** → **모듈**에서 **슈퍼톤** 선택
-2. **Supertone 키**에 API 키 붙여넣기 ([Supertone Console](https://console.supertoneapi.com/)에서 발급)
-3. 아래 **Supertone 보이스**에서 **목록 새로고침** → 사용할 보이스 선택
-4. 필요하면 **샘플로 보이스 클론**으로 짧은 녹음 wav/mp3 업로드 (STARTER tier 이상)
-5. 테스트 문장 입력 후 **테스트**로 미리 듣기
+2. **Supertone 키**에 복사한 API 키 붙여넣기
+3. **Supertone 보이스** → **목록 새로고침** → 보이스 선택
+4. 필요하면 **샘플로 보이스 클론** (wav/mp3, STARTER tier 이상) · **테스트**로 확인
 
 ![Supertone API·보이스 설정](../assets/ui/panel-audio-supertone.png)
-
-요금·구독: [Supertone 결제](https://play.supertone.ai/subscription)
 
 ## MiniMax
 
 클라우드 TTS **MiniMax**를 쓸 때의 설정입니다.
 
+### API 키 발급 (웹)
+
+1. [MiniMax API Platform](https://platform.minimax.io/) 접속 → 회원가입·로그인
+2. 좌측 **API Keys** → **Create new secret key** → 키 이름 입력 후 생성
+3. 표시된 **Secret Key**를 즉시 복사 (재표시되지 않음)
+4. Speech TTS(종량제)를 쓸 경우 [Billing — Balance](https://platform.minimax.io/user-center/payment/balance)에서 잔액을 충전합니다.
+
+공식 가이드: [MiniMax API — Prerequisites](https://platform.minimax.io/docs/guides/quickstart-preparation)
+
+프로그램 **API Base URL**은 기본값 **`https://api.minimax.io/v1`** 을 그대로 두면 됩니다. (MiniMax OpenAI 호환 API와 동일)
+
+### 프로그램에 입력
+
 1. **오디오·음성** 탭 → **TTS (음성 합성)** → **모듈**에서 **MiniMax** 선택
-2. **MiniMax API 키** 붙여넣기 ([MiniMax Platform](https://platform.minimax.io/)에서 발급)
-3. **API Base URL**은 기본값 `https://api.minimax.io/v1` 그대로 두면 됩니다 (리전에 따라 다르면 MiniMax 문서 참고)
-4. 아래 **MiniMax 보이스**에서 **목록 새로고침** → 보이스 선택
-5. **모델**(`speech-2.8-hd` / `speech-2.8-turbo`)·**속도** 조절, **샘플로 보이스 클론**·**테스트** 가능
+2. **MiniMax API 키** 붙여넣기 · **API Base URL** 확인 (`https://api.minimax.io/v1`)
+3. **MiniMax 보이스** → **목록 새로고침** → 보이스 선택
+4. **모델**(`speech-2.8-hd` / `speech-2.8-turbo`)·**속도** 조절, **샘플로 보이스 클론**·**테스트** 가능
 
 ![MiniMax API·보이스 설정](../assets/ui/panel-audio-minimax.png)
 
