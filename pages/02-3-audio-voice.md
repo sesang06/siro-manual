@@ -142,18 +142,29 @@ Speech API 키는 아래 **API Platform**에서 발급하고, TTS 사용량·구
 
 ![MiniMax API·보이스 설정](../assets/ui/panel-audio-minimax.png)
 
+### 보이스 클론 (웹)
+
+캐릭터·본인 목소리를 쓰려면 **[MiniMax Audio — Voice Cloning](https://www.minimax.io/audio/voices-cloning)** 에서 클론하세요. (프로그램 내 **샘플로 보이스 클론**보다 웹 UI를 권장합니다.)
+
+![MiniMax Voice Cloning](../assets/gdoc/minimax_audio_voices_cloning.png)
+
+1. [Voice Cloning](https://www.minimax.io/audio/voices-cloning) 접속 → MiniMax Audio 계정으로 로그인
+2. **Import audio** — wav/mp3 등 **최대 20MB** 파일 업로드, 또는 **Record audio**로 **10~60초** 녹음
+3. 조용한 환경·한 명만 말한 **깨끗한 샘플** 사용 (잡음·리버브·다중 화자는 품질 저하)
+4. (선택) **Advanced Settings** — 배경 잡음 제거·억양 최적화
+5. 클론 완료 후 생성된 **voice_id**를 기억해 두거나, 아래처럼 프로그램에서 **목록 새로고침**으로 불러옵니다
+
 ### 보이스 맞추기 (MiniMax)
 
 | 단계 | UI | 설명 |
 |------|-----|------|
-| 1 | **MiniMax 보이스** → **목록 새로고침** | system·클론 보이스 ID 목록을 API에서 불러옵니다 |
-| 2 | **사용 보이스** | 목록에서 고르거나 voice_id를 직접 입력 |
-| 3 | **샘플로 보이스 클론** (선택) | wav/mp3/m4a(**10초~5분**, 20MB 이하) → **클론 ID**(**자동 생성** 가능) → **샘플 업로드 후 클론** |
-| 4 | **모델** | `speech-2.8-hd`(고음질) / `speech-2.8-turbo`(빠름) |
-| 5 | **속도** | 0.5~2.0 |
-| 6 | **테스트 문장** + **테스트** | 클론·선택한 보이스로 즉시 미리듣기 |
+| 1 | **MiniMax 보이스** → **목록 새로고침** | system 보이스 + [Voice Cloning](https://www.minimax.io/audio/voices-cloning)에서 만든 클론 ID 목록 |
+| 2 | **사용 보이스** | 기본 보이스 또는 웹에서 클론한 voice_id 선택 |
+| 3 | **모델** | `speech-2.8-hd`(고음질) / `speech-2.8-turbo`(빠름) |
+| 4 | **속도** | 0.5~2.0 |
+| 5 | **테스트 문장** + **테스트** | 선택한 보이스로 즉시 미리듣기 |
 
-클론 샘플은 **10초 이상**이어야 합니다. 짧은 녹음 한 파일로 본인/캐릭터 톤을 옮길 때 유용합니다.
+웹에서 클론한 뒤 **목록 새로고침**을 눌러야 새 voice_id가 콤보에 나타납니다.
 
 ## GPT-SoVITS (`tts 모듈`)
 
