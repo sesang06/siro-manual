@@ -1,6 +1,6 @@
 ﻿# 00. 개요
 
-시로 AI 버튜버는 **Python 백엔드(대화·STT·TTS)** 와 **Unity Live2D 클라이언트**가 함께 동작하는 AI 버튜버 방송 도구입니다.
+시로 AI 버튜버는 **대화·음성 인식·음성 합성·Live2D 캐릭터 표시**를 한 프로그램으로 제공하는 AI 버튜버 방송 도구입니다. 실행하면 캐릭터 창이 함께 뜹니다.
 
 [[TIP("시작하기")]]
 처음이시면 **[01. 시작하기](https://wikidocs.net/372516)** 순서로 읽어 주세요.
@@ -10,8 +10,7 @@
 
 | 구성 | 역할 |
 |------|------|
-| **AI 버튜버 실행 프로그램** | LLM 대화, 음성 인식(STT), 음성 합성(TTS), 채팅·후원 연동 |
-| **Unity 클라이언트 (siro-launcher)** | Live2D 캐릭터 표시, 자막, 오디오 재생 |
+| **AI 버튜버 실행 프로그램** | LLM 대화, STT, TTS, Live2D·자막·오버레이, 채팅·후원 연동 |
 | **GPT-SoVITS** (선택) | 로컬 TTS 엔진 — `tts 모듈` 사용 시 자동 기동 |
 
 ## 다운로드
@@ -19,19 +18,17 @@
 - [Hugging Face — sesang06/siro_vtuber](https://huggingface.co/buckets/sesang06/siro_vtuber)
 - `siro_ai.zip` (일반), `siro_ai_50.zip` (50-series GPU)
 
-Unity 클라이언트는 별도 준비가 필요합니다. [시작하기](https://wikidocs.net/372516)의 Unity 클라이언트 절을 참고하세요.
-
 ## 빠른 시작
 
 1. [01. 시작하기](https://wikidocs.net/372516) — 요구사항·설치·API 키·첫 실행
-2. Unity 클라이언트 실행 → Python **프로그램 시작**
+2. **프로그램 시작** 클릭
 3. 마이크로 말하면 AI가 응답합니다
 
 ## 메뉴얼 구성
 
 | 섹션 | 내용 |
 |------|------|
-| [시작하기](https://wikidocs.net/372516) | 설치·실행·Unity 클라이언트 |
+| [시작하기](https://wikidocs.net/372516) | 설치·실행·첫 사용 |
 | [UI 설정](https://wikidocs.net/372517) | 앱 패널별 설정 (AI·캐릭터·방송 등) |
 | [문제 해결](https://wikidocs.net/372522) | 트러블슈팅·[변경 이력](https://wikidocs.net/372523) |
 
