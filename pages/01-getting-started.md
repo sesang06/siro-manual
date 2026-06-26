@@ -98,26 +98,12 @@ STT·TTS API 키(Supertone, MiniMax, OpenAI Realtime 등)는 [오디오·음성]
 
 ## 첫 실행
 
-![screenshot](../assets/gdoc/img_002.png)
-
-```mermaid
-sequenceDiagram
-    participant P as AI 버튜버 프로그램
-
-    P->>P: main_pyqt.exe 실행 (캐릭터 창 자동 실행)
-    P->>P: 설정 확인
-    P->>P: 프로그램 시작 클릭
-    P->>P: 자막·음성·Live2D 표시
-```
-
 1. **AI 버튜버 실행 프로그램** (`main_pyqt.exe` 또는 배포 런처)을 실행합니다. **캐릭터 표시 창**이 함께 뜹니다.
 2. 좌측 탭에서 **AI 모델** — LLM과 API 키를 확인합니다.
 3. **캐릭터** 탭 — 캐릭터 폴더·시나리오를 선택합니다.
 4. **오디오·음성** 탭 — 마이크, STT, TTS 모듈을 설정합니다. 방송이면 **OpenAI Realtime + MiniMax**, 연습·무료면 **Whisper + tts 모듈**. ([오디오·음성](https://wikidocs.net/372528) 참고)
 5. 우측 **실행 제어** → **프로그램 시작**을 클릭합니다.
 6. 초기화가 끝나면 마이크로 말해 보세요.
-
-![screenshot](../assets/gdoc/img_004.png)
 
 ### 실행 제어 패널
 

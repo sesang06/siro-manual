@@ -26,10 +26,8 @@
 | `reference.jsonl` | 말투·문답 예시 — `$REFERENCE` 벡터 검색 |
 | `summary_log.txt` | 세션 요약 (자동 갱신) — `$SUMMARY` |
 | `character_mix/` | 성격 변주용 `.txt` — `$character_mix` 랜덤 1개 |
-| `character_state.yaml` | 의상·감정 상태 (의상 UI와 연동) |
 | `conversation_history/` | 대화 기록 (일별 jsonl) |
 | `db/` | 장기 메모리 임베딩 DB |
-| `config.yaml` | 캐릭터 전용 설정 (TTS 보이스 등) |
 
 - **설정 폴더 열기** — 탐색기에서 해당 폴더를 엽니다.
 - **프롬프트 편집** — `prompt.txt`를 GUI로 편집합니다. 성격·말투·규칙의 기본 틀입니다.
@@ -59,7 +57,7 @@
 - **프로그램 시작 시** (ChatBot 초기화): `$USER_NAME`, `$CHARACTER_NAME`, `$SCENARIO`, `$OUTFIT_STATE` → 이후 `prompt.txt` 본문은 메모리에 고정.
 - **매 응답마다**: `$SUMMARY`, `$SENTENCE_NUMBER`, `$character_mix`, `$EMOTION_STATE`, `$TOPIC`, `$REFERENCE`, `$MEMORY`.
 
-`$EMOTION_STATE`와 별개로, **감정별 추가 프롬프트**(`emotion_extra_prompts.yaml`)는 지배 감정이 일정 수준 이상일 때 system 프롬프트 **끝에 문단으로 덧붙습니다** (매크로 아님). 편집은 [AI 기능](https://wikidocs.net/372530) 탭.
+`$EMOTION_STATE`와 별개로, **감정별 추가 프롬프트**는 지배 감정이 일정 수준 이상일 때 system 프롬프트 **끝에 문단으로 덧붙습니다** (매크로 아님). 편집은 [AI 기능](https://wikidocs.net/372530) 탭.
 
 **예시 (`prompt.txt` 발췌)**
 

@@ -22,7 +22,7 @@
 4. OpenAI Realtime: API 키·인터넷 연결
 5. Whisper: CUDA/CPU 부하 — 더 작은 모델 시도
 
-**OpenAI Realtime:** delta는 오는데 최종 텍스트가 없을 때 — 말을 멈춘 뒤 1~2초 대기 (침묵 후 commit). `debug` 켜고 로그 확인.
+**OpenAI Realtime:** delta는 오는데 최종 텍스트가 없을 때 — 말을 멈춘 뒤 1~2초 대기 (침묵 후 commit). **풀 프롬프트 출력**을 켜고 로그 확인.
 
 ## AI 발화 중 마이크
 
@@ -59,7 +59,7 @@
 ## API 키 / LLM 오류
 
 - **AI 모델** 탭 API 키 확인
-- `debug` 체크 후 콘솔 로그
+- **풀 프롬프트 출력** 체크 후 콘솔 로그
 - 모델명 deprecated 여부 — 최신 기본 모델 사용
 
 ## 설정이 저장되지 않음
