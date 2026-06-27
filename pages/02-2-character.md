@@ -8,9 +8,9 @@
 
 **응답 및 TTS 언어** — AI가 말하는 언어와 TTS 발음 언어입니다 (한국어 / English / 日本語 등).
 
-**유저 이름** — 프롬프트 변수 **$USER_NAME**에 들어갑니다. AI가 스트리머를 부를 때 쓰는 이름입니다.
+**유저 이름** — 프롬프트 변수 **USER_NAME**(앞에 달러 기호)에 들어갑니다. AI가 스트리머를 부를 때 쓰는 이름입니다.
 
-**캐릭터 이름** — **$CHARACTER_NAME**. 캐릭터 자신의 이름입니다.
+**캐릭터 이름** — **CHARACTER_NAME**(앞에 달러 기호). 캐릭터 자신의 이름입니다.
 
 ## 캐릭터 설정 폴더
 
@@ -21,11 +21,11 @@
 **폴더 파일 (예: setting_doc/siro/)**
 
 - **prompt.txt** — 시스템 프롬프트 본문 (매크로 사용)
-- **scenario/** — 방송 상황 txt — **$SCENARIO**에 삽입
-- **topic.txt** — 한 줄짜리 대화 주제 목록 — **$TOPIC**에서 1줄 랜덤
-- **reference.jsonl** — 말투·문답 예시 — **$REFERENCE** 벡터 검색
-- **summary_log.txt** — 세션 요약 (자동 갱신) — **$SUMMARY**
-- **character_mix/** — 성격 변주용 txt — **$character_mix** 랜덤 1개
+- **scenario/** — 방송 상황 txt — **SCENARIO** 매크로에 삽입
+- **topic.txt** — 한 줄짜리 대화 주제 목록 — **TOPIC** 매크로에서 1줄 랜덤
+- **reference.jsonl** — 말투·문답 예시 — **REFERENCE** 매크로 벡터 검색
+- **summary_log.txt** — 세션 요약 (자동 갱신) — **SUMMARY** 매크로
+- **character_mix/** — 성격 변주용 txt — **character_mix** 매크로 랜덤 1개
 - **conversation_history/** — 대화 기록 (일별 jsonl)
 - **db/** — 장기 메모리 임베딩 DB
 
@@ -36,63 +36,55 @@
 
 ### prompt.txt 매크로
 
-프롬프트 편집 창 상단 **사용 가능한 매크로**와 동일합니다. $이름 형태로 적으면 **LLM에 보내기 직전**에 실제 값으로 치환됩니다.
+프롬프트 편집 창 상단 **사용 가능한 매크로**와 동일합니다. **달러 기호 + 이름**(예: USER_NAME) 형태로 적으면 **LLM에 보내기 직전**에 실제 값으로 치환됩니다.
 
-**$USER_NAME** — **캐릭터** 탭 **유저 이름**. 시나리오 txt 안에서도 사용 가능.
+[[TIP("매크로 표기")]]
+위키독스 본문에서는 달러 기호를 생략하고 **USER_NAME**처럼 이름만 적습니다. 실제 prompt.txt·앱 UI에서는 달러 기호를 앞에 붙입니다.
+[[/TIP]]
 
-**$CHARACTER_NAME** — **캐릭터** 탭 **캐릭터 이름**. 시나리오 txt 안에서도 사용 가능.
+- **USER_NAME** — **캐릭터** 탭 **유저 이름**. 시나리오 txt 안에서도 사용 가능.
+- **CHARACTER_NAME** — **캐릭터** 탭 **캐릭터 이름**. 시나리오 txt 안에서도 사용 가능.
+- **SCENARIO** — **시작 시나리오** 드롭다운에서 고른 txt 전체. 「없음」이면 빈 문자열.
+- **OUTFIT_STATE** — 의상 on/off 태그 묶음. glasses_off, horn_off, cat_ear_on 등 — **프로그램 시작 시** 스냅샷.
+- **SUMMARY** — summary_log.txt 내용. **AI 기능** → 「대화 후 세션 요약 자동 갱신」 켜야 갱신됨.
+- **TOPIC** — topic.txt에서 **1줄** 무작위 선택. 유저가 새 주제를 안 꺼낼 때 힌트.
+- **REFERENCE** — reference.jsonl에서 유사 문답 검색. **AI 기능** → 「캐릭터 레퍼런스 문서 검색 참조」 + **한번에 참조하는 레퍼런스 수**.
+- **MEMORY** — 장기 메모리 DB에서 유사 기억 (최대 5건). **AI 기능** → 「장기 메모리」 + 임베딩용 API 키.
+- **EMOTION_STATE** — 감정 수치 요약. 예: joy:high, anger:low — 값 2 미만은 생략, 전부 미만이면 neutral.
+- **SENTENCE_NUMBER** — 이번 응답 목표 문장 수. 1·2·3 중 **응답마다** 랜덤.
+- **character_mix** — character_mix/ 안 txt **1개** 무작위. 폴더·파일 없으면 빈 문자열. 프롬프트에 **character_mix**를 직접 넣어야 함.
 
-**$SCENARIO** — **시작 시나리오** 드롭다운에서 고른 txt 전체. 「없음」이면 빈 문자열.
-
-**$OUTFIT_STATE** — 의상 on/off 태그 묶음. glasses_off, horn_off, cat_ear_on 등 — **프로그램 시작 시** 스냅샷.
-
-**$SUMMARY** — summary_log.txt 내용. **AI 기능** → 「대화 후 세션 요약 자동 갱신」 켜야 갱신됨.
-
-**$TOPIC** — topic.txt에서 **1줄** 무작위 선택. 유저가 새 주제를 안 꺼낼 때 힌트.
-
-**$REFERENCE** — reference.jsonl에서 유사 문답 검색. **AI 기능** → 「캐릭터 레퍼런스 문서 검색 참조」 + **한번에 참조하는 레퍼런스 수**.
-
-**$MEMORY** — 장기 메모리 DB에서 유사 기억 (최대 5건). **AI 기능** → 「장기 메모리」 + 임베딩용 API 키.
-
-**$EMOTION_STATE** — 감정 수치 요약. 예: joy:high, anger:low — 값 2 미만은 생략, 전부 미만이면 neutral.
-
-**$SENTENCE_NUMBER** — 이번 응답 목표 문장 수. 1·2·3 중 **응답마다** 랜덤.
-
-**$character_mix** — character_mix/ 안 txt **1개** 무작위. 폴더·파일 없으면 빈 문자열. 프롬프트에 **$character_mix**를 직접 넣어야 함.
-
-의상 태그(**$OUTFIT_STATE**) 예: glasses_off, horn_off, cat_ear_on, longhair_on, longSleeveTee
+의상 태그(OUTFIT_STATE) 예: glasses_off, horn_off, cat_ear_on, longhair_on, longSleeveTee
 
 **치환 시점 요약**
 
-- **프로그램 시작 시** (ChatBot 초기화): **$USER_NAME**, **$CHARACTER_NAME**, **$SCENARIO**, **$OUTFIT_STATE** → 이후 prompt.txt 본문은 메모리에 고정.
-- **매 응답마다**: **$SUMMARY**, **$SENTENCE_NUMBER**, **$character_mix**, **$EMOTION_STATE**, **$TOPIC**, **$REFERENCE**, **$MEMORY**.
+- **프로그램 시작 시** (ChatBot 초기화): USER_NAME, CHARACTER_NAME, SCENARIO, OUTFIT_STATE → 이후 prompt.txt 본문은 메모리에 고정.
+- **매 응답마다**: SUMMARY, SENTENCE_NUMBER, character_mix, EMOTION_STATE, TOPIC, REFERENCE, MEMORY.
 
-**$EMOTION_STATE**와 별개로, **감정별 추가 프롬프트**는 지배 감정이 일정 수준 이상일 때 system 프롬프트 **끝에 문단으로 덧붙습니다** (매크로 아님). 편집은 [AI 기능](https://wikidocs.net/372530) 탭.
+EMOTION_STATE와 별개로, **감정별 추가 프롬프트**는 지배 감정이 일정 수준 이상일 때 system 프롬프트 **끝에 문단으로 덧붙습니다** (매크로 아님). 편집은 [AI 기능](https://wikidocs.net/372530) 탭.
 
-**예시 (prompt.txt 발췌)**
+**예시 (prompt.txt 발췌)** — 아래는 prompt.txt에 적는 형태입니다. 각 매크로 이름 앞에 달러 기호를 붙입니다.
 
-```
-[Topic Setting]
-'$USER_NAME'가 별다른 주제를 제시하지 않았을 때, 다음 주제 중 하나를 선택하여 대화를 이어가라.
-$TOPIC
+    [Topic Setting]
+    'USER_NAME'가 별다른 주제를 제시하지 않았을 때, 다음 주제 중 하나를 선택하여 대화를 이어가라.
+    (TOPIC 매크로)
 
-[Example Dialogue]
-$REFERENCE
+    [Example Dialogue]
+    (REFERENCE 매크로)
 
-[$USER_NAME와 $CHARACTER_NAME의 대화 내역]
-$SUMMARY
+    [USER_NAME와 CHARACTER_NAME의 대화 내역]
+    (SUMMARY 매크로)
 
-[$CHARACTER_NAME의 기억]
-$MEMORY
+    [CHARACTER_NAME의 기억]
+    (MEMORY 매크로)
 
-Your initial outfit state is: $OUTFIT_STATE
-Your current emotional state is: $EMOTION_STATE
-답변은 반드시 $SENTENCE_NUMBER문장으로 구성하라.
-```
+    Your initial outfit state is: (OUTFIT_STATE 매크로)
+    Your current emotional state is: (EMOTION_STATE 매크로)
+    답변은 반드시 (SENTENCE_NUMBER 매크로)문장으로 구성하라.
 
 ## 시작 시나리오
 
-**시작 시나리오 파일** — 지금 방송에서 어떤 상황인지 AI에게 알려 주는 텍스트입니다. **$SCENARIO**에 삽입됩니다. 예: 「게임 방송 중」, 「시청자와 수다」.
+**시작 시나리오 파일** — 지금 방송에서 어떤 상황인지 AI에게 알려 주는 텍스트입니다. **SCENARIO** 매크로에 삽입됩니다. 예: 「게임 방송 중」, 「시청자와 수다」.
 
 - **시나리오 폴더 열기** — 시나리오 txt 파일들이 있는 폴더를 엽니다.
 - **목록 새로고침** — 파일을 추가·삭제한 뒤 드롭다운 목록을 다시 읽습니다.
