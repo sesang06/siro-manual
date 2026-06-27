@@ -18,7 +18,7 @@
 
 폴더를 바꾸면 [라투디](https://wikidocs.net/372532)·[보이스](https://wikidocs.net/372528) UI도 그 캐릭터 기준으로 함께 바뀝니다.
 
-| 경로 (예: `setting_doc/siro/`) | 용도 |
+| 경로 (예: setting_doc/siro/) | 용도 |
 |--------------------------------|------|
 | `prompt.txt` | 시스템 프롬프트 본문 (매크로 사용) |
 | `scenario/` | 방송 상황 `.txt` — `$SCENARIO`에 삽입 |
@@ -43,14 +43,16 @@
 | `$USER_NAME` | **캐릭터** 탭 **유저 이름** | 시나리오 `.txt` 안에서도 사용 가능 |
 | `$CHARACTER_NAME` | **캐릭터** 탭 **캐릭터 이름** | 시나리오 `.txt` 안에서도 사용 가능 |
 | `$SCENARIO` | **시작 시나리오** 드롭다운에서 고른 `.txt` 전체 | 「없음」이면 빈 문자열 |
-| `$OUTFIT_STATE` | 의상 on/off 태그 묶음 | 예: `<glasses_off><horn_off><cat_ear_on><longhair_on><longSleeveTee>` — **프로그램 시작 시** 스냅샷 |
+| `$OUTFIT_STATE` | 의상 on/off 태그 묶음 | glasses_off, horn_off, cat_ear_on 등 — **프로그램 시작 시** 스냅샷 |
 | `$SUMMARY` | `summary_log.txt` 내용 | **AI 기능** → 「대화 후 세션 요약 자동 갱신」 켜야 갱신됨 |
 | `$TOPIC` | `topic.txt`에서 **1줄** 무작위 선택 | 유저가 새 주제를 안 꺼낼 때 힌트 |
 | `$REFERENCE` | `reference.jsonl`에서 유사 문답 검색 | **AI 기능** → 「캐릭터 레퍼런스 문서 검색 참조」 + **한번에 참조하는 레퍼런스 수** |
 | `$MEMORY` | 장기 메모리 DB에서 유사 기억 (최대 5건, `- …` 목록) | **AI 기능** → 「장기 메모리」 + 임베딩용 API 키 |
 | `$EMOTION_STATE` | 감정 수치 요약 | 예: `joy:high`, `anger:low` — 값 2 미만은 생략, 전부 미만이면 `neutral` |
 | `$SENTENCE_NUMBER` | 이번 응답 목표 문장 수 | `1`·`2`·`3` 중 **응답마다** 랜덤 |
-| `$character_mix` | `character_mix/` 안 `.txt` **1개** 무작위 | 폴더·파일 없으면 빈 문자열. 프롬프트에 `$character_mix`를 직접 넣어야 함 |
+| `$character_mix` | character_mix/ 안 txt **1개** 무작위 | 폴더·파일 없으면 빈 문자열. 프롬프트에 `$character_mix`를 직접 넣어야 함 |
+
+의상 태그(`$OUTFIT_STATE`) 예: glasses_off, horn_off, cat_ear_on, longhair_on, longSleeveTee
 
 **치환 시점 요약**
 
