@@ -48,8 +48,8 @@
 
 **STT 테스트 시작** — **프로그램 시작 전**에 마이크가 잘 잡히는지 확인합니다. 버튼을 누르고 말하면 **인식 결과** 칸에 텍스트가 나옵니다.
 
-![screenshot](../assets/gdoc/img_023.png)
-![screenshot](../assets/gdoc/img_024.png)
+![STT 테스트 — Realtime 인식 결과](../assets/gdoc/img_023.png)
+![STT 테스트 — Whisper 인식 결과](../assets/gdoc/img_024.png)
 
 Whisper는 **말을 멈춘 뒤** 결과가 나오고, Realtime은 **말하는 중**에도 표시됩니다.
 

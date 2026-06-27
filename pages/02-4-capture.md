@@ -31,8 +31,8 @@
 
 「직접 입력」을 고른 뒤 **캡처 영역 표시**로 오버레이 창을 띄우고, 게임 화면 등에 맞게 영역을 드래그합니다. 투명 사각형 안만 캡처됩니다.
 
-![screenshot](../assets/gdoc/img_037.png)
-![screenshot](../assets/gdoc/img_038.png)
+![직접 입력 — 캡처 영역 오버레이](../assets/gdoc/img_037.png)
+![직접 입력 — 영역 드래그 조절](../assets/gdoc/img_038.png)
 
 ### OBS Virtual Camera
 
@@ -40,11 +40,11 @@
 
 비디오 장치 로딩 오류가 나면 Windows **Unicode UTF-8** 베타 옵션을 확인하세요. [UTF-8 로캘 설정 (네이버 블로그)](https://blog.naver.com/404errorkr/223834100569)
 
-![screenshot](../assets/gdoc/img_039.png)
-![screenshot](../assets/gdoc/img_040.png)
-![screenshot](../assets/gdoc/img_041.png)
-![screenshot](../assets/gdoc/img_042.png)
-![screenshot](../assets/gdoc/img_043.png)
+![OBS — 가상 카메라 시작](../assets/gdoc/img_039.png)
+![OBS — Virtual Camera 활성화](../assets/gdoc/img_040.png)
+![Windows — UTF-8 로캘 베타 설정](../assets/gdoc/img_041.png)
+![화면 캡처 — 카메라에서 OBS Virtual Camera 선택](../assets/gdoc/img_042.png)
+![OBS Virtual Camera — 캡처 미리보기](../assets/gdoc/img_043.png)
 
 일부 GPU 가속 게임·원격 플레이는 **검은 화면**만 나올 수 있습니다. 그때는 OBS로 캡처 후 가상 카메라를 쓰는 편이 낫습니다.
 

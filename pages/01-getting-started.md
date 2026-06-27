@@ -34,7 +34,6 @@
 
 ### 선택 구성
 
-- **Qdrant** — 장기 메모리 벡터 DB (메모리 기능 사용 시)
 - **GPT-SoVITS 서버** — `tts 모듈` 선택 시 프로그램이 로컬 서버를 기동합니다
 
 ### 경로·환경 주의
@@ -80,21 +79,21 @@ STT·TTS API 키(Supertone, MiniMax, OpenAI Realtime 등)는 [오디오·음성]
 
 [Google AI Studio — API 키](https://aistudio.google.com/app/apikey?hl=ko)에서 **API 키 만들기** → 키 복사 → **AI 모델** 탭 **Gemini API 키**에 붙여넣기.
 
-![screenshot](../assets/gdoc/img_005.png)
-![screenshot](../assets/gdoc/img_006.png)
+![Google AI Studio — API 키 만들기](../assets/gdoc/img_005.png)
+![Google AI Studio — 생성된 Gemini API 키 복사](../assets/gdoc/img_006.png)
 
 #### OpenAI 키 (선택)
 
 [OpenAI API Keys](https://platform.openai.com/settings/organization/api-keys)에서 키 생성 → **AI 모델** 탭 **OpenAI API 키** (ChatGPT·임베딩) 및 **오디오·음성** 탭 Realtime STT에 사용. [OpenAI Billing](https://platform.openai.com/settings/organization/billing/overview)에서 크레딧 충전이 필요할 수 있습니다.
 
-![screenshot](../assets/gdoc/img_011.png)
-![screenshot](../assets/gdoc/img_013.png)
+![OpenAI — API keys 페이지](../assets/gdoc/img_011.png)
+![OpenAI — 생성된 Secret key 저장](../assets/gdoc/img_013.png)
 
 #### Claude 키 (선택)
 
 [Claude API Keys](https://console.anthropic.com/settings/keys)에서 키 생성 → **AI 모델** 탭 **Claude API 키**에 붙여넣기.
 
-![screenshot](../assets/gdoc/img_019.png)
+![Claude Console — API keys](../assets/gdoc/img_019.png)
 
 ## 첫 실행
 

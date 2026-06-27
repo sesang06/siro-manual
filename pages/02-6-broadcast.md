@@ -10,8 +10,8 @@
 
 **위플랩 채팅 URL** — [위플랩 채팅](https://weflab.com/chat)에서 **채팅창 → URL**을 복사해 붙입니다.
 
-![screenshot](../assets/gdoc/img_052.png)
-![screenshot](../assets/gdoc/img_053.png)
+![위플랩 채팅 — URL 복사](../assets/gdoc/img_052.png)
+![위플랩 채팅 URL — 프로그램 입력](../assets/gdoc/img_053.png)
 
 채팅 반응용 **시나리오**는 [캐릭터](https://wikidocs.net/372527) 탭에서 고릅니다.
 
@@ -27,7 +27,7 @@
 
 **위플랩 후원 URL** — 위플랩 후원 페이지에서 URL을 복사합니다.
 
-![screenshot](../assets/gdoc/img_054.png)
+![위플랩 후원 — URL 복사](../assets/gdoc/img_054.png)
 
 ## 투네이션
 
@@ -35,7 +35,7 @@
 
 **투네이션 알림박스 URL** — 알림박스에 표시된 URL을 입력합니다.
 
-![screenshot](../assets/gdoc/img_055.png)
+![투네이션 알림박스 — URL 복사](../assets/gdoc/img_055.png)
 
 ## 후원, 댓글 상세 설정
 
